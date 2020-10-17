@@ -50,7 +50,7 @@ function getComputerChoice(){
 function win(user,computer){
     userScore++;
     userScore_span.innerHTML=userScore;
-    result_p.innerHTML=`${user}${userSmallWord} beats ${computer}${compSmallWord}.You win!`
+    result_p.innerHTML=`${user}${userSmallWord} beats ${computer}${compSmallWord}.You win!🔥`
     document.getElementById(user).classList.add('green-glow');
     setTimeout(() => document.getElementById(user).classList.remove('green-glow'),300);
 }
@@ -58,7 +58,7 @@ function win(user,computer){
 function lose(user,computer){
     computerScore++;
     computerScore_span.innerHTML=computerScore;
-    result_p.innerHTML=`${user}${userSmallWord} loses to ${computer}${compSmallWord}.You lost...`
+    result_p.innerHTML=`${user}${userSmallWord} loses to ${computer}${compSmallWord}.You lost...💩`
     document.getElementById(user).classList.add('red-glow');
     setTimeout(() => document.getElementById(user).classList.remove('red-glow'),300);
 }
